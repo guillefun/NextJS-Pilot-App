@@ -1,5 +1,3 @@
-'use client'
-
 import styles from './ListOfComments.module.css'
 import Image from 'next/image'
 import stylesCommon from '../../Commons.module.css'

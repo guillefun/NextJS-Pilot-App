@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    outpunt: "export",
+    //output: "export",
     basePath: "/nextjs-posts",
+    experimental: {
+        appDir: true
+    },
     images: {
         unoptimized: true
     },

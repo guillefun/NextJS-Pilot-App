@@ -16,7 +16,7 @@ const fetchPostsIncrementalStaticRegen = () => {
   }).then((res) => res.json())
 }
 
-export default async function ListOfPosts() {
+export default async function ListOfPosts() { //{ params } : { params: any}
   const posts = await fetchPostsIncrementalStaticRegen()
 
   return posts.slice(0, 25).map((post: any) => (
