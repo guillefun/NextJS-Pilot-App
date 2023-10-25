@@ -1,0 +1,14 @@
+.crumb {
+  color: #d2d5fc;
+  text-transform: capitalize;
+}
+
+.crumblink {
+  color: #9ba2ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.crumblink:hover {
+  text-decoration: none;
+}
