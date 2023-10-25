@@ -55,6 +55,7 @@ jobs:
             echo "manager=pnpm" >> $GITHUB_OUTPUT
             echo "command=exec --frozen-lockfile" >> $GITHUB_OUTPUT
             echo "runner=pnpm" >> $GITHUB_OUTPUT
+            exito 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
@@ -63,7 +64,7 @@ jobs:
           else
             echo "Unable to determine package manager"
             exit 1
-          
+          fi
       
       - name: Setup Node
         uses: actions/setup-node@v3
