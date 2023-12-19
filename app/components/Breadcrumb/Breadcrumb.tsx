@@ -56,7 +56,7 @@ export default function Breadcrumb() {
     })
 
     // Add in a default "Home" crumb for the top-level
-    return [{ href: '/', text: 'Home' }, ...crumblist]
+    return [ ...crumblist] // { href: '/posts', text: 'Posts' },
   }
 
   // Call the function to generate the breadcrumbs list
